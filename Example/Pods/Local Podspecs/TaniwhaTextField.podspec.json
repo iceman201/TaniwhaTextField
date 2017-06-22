@@ -1,0 +1,22 @@
+{
+  "name": "TaniwhaTextField",
+  "version": "0.1.0",
+  "summary": "A short description of TaniwhaTextField.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iceman201/TaniwhaTextField",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "iceman201": "jiaoliguo888@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iceman201/TaniwhaTextField.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TaniwhaTextField/Classes/**/*"
+}

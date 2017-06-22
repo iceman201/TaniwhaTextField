@@ -1,0 +1,6 @@
+framework module TaniwhaTextField {
+  umbrella header "TaniwhaTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
