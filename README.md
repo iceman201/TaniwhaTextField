@@ -22,7 +22,7 @@ pod "TaniwhaTextField"
 
 ## Author
 
-iceman201, jiaoliguo888@gmail.com
+iceman201, liguo@jiao.co.nz
 
 ## License
 

@@ -13,7 +13,7 @@
 		324AD1003A1A8B7077CB7DA9D8F5A85F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		5394907BC9C834EF017B942B63CAB999 /* Pods-TaniwhaTextField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A3BA7D3C8284325F9B82102A746422 /* Pods-TaniwhaTextField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		726D8799F081A49BDB1B2554E1C3B7BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A81A04379F89E80138D17477C014A1ED /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16B5A49A86D9FC1D954BD311BC3B80 /* ReplaceMe.swift */; };
+		A81A04379F89E80138D17477C014A1ED /* TaniwhaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D16B5A49A86D9FC1D954BD311BC3B80 /* TaniwhaTextField.swift */; };
 		DB79C5F8720F1728CF828199306130B7 /* TaniwhaTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FEACED0AE5233B379CA76F247A55EFE /* TaniwhaTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DECA33C61E238C0A46B2DFD3319F039A /* Pods-TaniwhaTextField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B833F90D3EA9A2AC8B267D4D0E9359 /* Pods-TaniwhaTextField_Example-dummy.m */; };
 		E9822D9CDC69C016CDA43A1BA55CAF92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -34,7 +34,7 @@
 		24C1DB1C84B06629A0FA25E6DAD6C724 /* Pods-TaniwhaTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaniwhaTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2C4AB4A014118C088D4DF54217424353 /* Pods-TaniwhaTextField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaniwhaTextField_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3F46BD135853ADCB83BFED8AA1B035F1 /* Pods-TaniwhaTextField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaniwhaTextField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4D1662C8A78BFEA7F77A19F890899AEA /* Pods-TaniwhaTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaniwhaTextField_Example.modulemap"; sourceTree = "<group>"; };
+		4D1662C8A78BFEA7F77A19F890899AEA /* Pods-TaniwhaTextField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TaniwhaTextField_Example.modulemap"; sourceTree = "<group>"; };
 		55B833F90D3EA9A2AC8B267D4D0E9359 /* Pods-TaniwhaTextField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaniwhaTextField_Example-dummy.m"; sourceTree = "<group>"; };
 		580C8AEC1AF8C3BC52632AE9AEA17501 /* Pods-TaniwhaTextField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaniwhaTextField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		58BE0E749AD1B99508A15A64DC02458A /* Pods-TaniwhaTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaniwhaTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,25 +42,25 @@
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		67ED85DB6C8017493D52DEEB5C947C71 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6844EA751D6C1F9397B446D5708B2A5F /* Pods-TaniwhaTextField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaniwhaTextField_Tests-resources.sh"; sourceTree = "<group>"; };
-		6C38C55400C6C3B3D8BD98390A7EC7BB /* Pods_TaniwhaTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaniwhaTextField_Example.framework; path = "Pods-TaniwhaTextField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D16B5A49A86D9FC1D954BD311BC3B80 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		6C38C55400C6C3B3D8BD98390A7EC7BB /* Pods_TaniwhaTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaniwhaTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D16B5A49A86D9FC1D954BD311BC3B80 /* TaniwhaTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TaniwhaTextField.swift; sourceTree = "<group>"; };
 		6D589981FDD4A8DBB49F1F3378BE2E69 /* Pods-TaniwhaTextField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaniwhaTextField_Tests-dummy.m"; sourceTree = "<group>"; };
-		7166A05D9D694609176E19A4CADEE0AF /* Pods-TaniwhaTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaniwhaTextField_Tests.modulemap"; sourceTree = "<group>"; };
+		7166A05D9D694609176E19A4CADEE0AF /* Pods-TaniwhaTextField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TaniwhaTextField_Tests.modulemap"; sourceTree = "<group>"; };
 		732831FDBD6F00C08F58014204C6B9A9 /* TaniwhaTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TaniwhaTextField-dummy.m"; sourceTree = "<group>"; };
 		8FEACED0AE5233B379CA76F247A55EFE /* TaniwhaTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E9CB8D05F6C2E455AA3EC57B5A11069 /* Pods-TaniwhaTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaniwhaTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A751DC6DC8195A11E4E2CE44FA2C00F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD9A15E4B13DACC1CAE4BE78217C60AA /* Pods-TaniwhaTextField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaniwhaTextField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D013F5C56D987857A3CD958906E841F4 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TaniwhaTextField.framework; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D013F5C56D987857A3CD958906E841F4 /* TaniwhaTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TaniwhaTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A3BA7D3C8284325F9B82102A746422 /* Pods-TaniwhaTextField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaniwhaTextField_Example-umbrella.h"; sourceTree = "<group>"; };
-		D4923DAFE5171BB9488EDCBC08154EB1 /* Pods_TaniwhaTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaniwhaTextField_Tests.framework; path = "Pods-TaniwhaTextField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4923DAFE5171BB9488EDCBC08154EB1 /* Pods_TaniwhaTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaniwhaTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E434568CE496FA251882DE9F4245116A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F330742F7D52310C7DBC30C116BCA676 /* Pods-TaniwhaTextField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaniwhaTextField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F414BB372EAA170364CFC3DA23180873 /* Pods-TaniwhaTextField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaniwhaTextField_Example-frameworks.sh"; sourceTree = "<group>"; };
 		F4A2E3A00600821BE03A93087F3DD6BA /* Pods-TaniwhaTextField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaniwhaTextField_Example-resources.sh"; sourceTree = "<group>"; };
 		F6503DFFE744E6908946C0BA1FF9260A /* Pods-TaniwhaTextField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaniwhaTextField_Tests-umbrella.h"; sourceTree = "<group>"; };
-		FAA691934A5F81FBE4DF20DCBF676BE2 /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
+		FAA691934A5F81FBE4DF20DCBF676BE2 /* TaniwhaTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TaniwhaTextField.modulemap; sourceTree = "<group>"; };
 		FD4B347E30D74DFCAC3A6B5DA0822DE3 /* TaniwhaTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TaniwhaTextField-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,16 +171,14 @@
 			children = (
 				9FC14A6222060249BF178627546DC3DA /* Classes */,
 			);
-			name = TaniwhaTextField;
 			path = TaniwhaTextField;
 			sourceTree = "<group>";
 		};
 		9FC14A6222060249BF178627546DC3DA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6D16B5A49A86D9FC1D954BD311BC3B80 /* ReplaceMe.swift */,
+				6D16B5A49A86D9FC1D954BD311BC3B80 /* TaniwhaTextField.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -339,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A81A04379F89E80138D17477C014A1ED /* ReplaceMe.swift in Sources */,
+				A81A04379F89E80138D17477C014A1ED /* TaniwhaTextField.swift in Sources */,
 				1D115039A7E72B125159FE36C1B9E29B /* TaniwhaTextField-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
