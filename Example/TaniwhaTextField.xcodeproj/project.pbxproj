@@ -39,11 +39,11 @@
 		607FACE51AFB9204008FA782 /* TaniwhaTextField_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaniwhaTextField_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		83F04F8A795CB89D86F68E14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		83F04F8A795CB89D86F68E14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8DB8156ECE555DA32247A12F /* Pods-TaniwhaTextField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaniwhaTextField_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaniwhaTextField_Example/Pods-TaniwhaTextField_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		AE888A488FB89BEC4C8CE7D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AE888A488FB89BEC4C8CE7D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BCD0601F7C12FB0B6B8A075E /* Pods-TaniwhaTextField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaniwhaTextField_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaniwhaTextField_Tests/Pods-TaniwhaTextField_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C374B47A61F81F57142C5A31 /* TaniwhaTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TaniwhaTextField.podspec; path = ../TaniwhaTextField.podspec; sourceTree = "<group>"; };
+		C374B47A61F81F57142C5A31 /* TaniwhaTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TaniwhaTextField.podspec; path = ../TaniwhaTextField.podspec; sourceTree = "<group>"; };
 		CAE293A1333244BEC3018EFE /* Pods-TaniwhaTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaniwhaTextField_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaniwhaTextField_Example/Pods-TaniwhaTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DFEBE934C29D56D1C54B4546 /* Pods_TaniwhaTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaniwhaTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA143DB5945F45A476DDAAC /* Pods-TaniwhaTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaniwhaTextField_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaniwhaTextField_Tests/Pods-TaniwhaTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -215,10 +215,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8436A3G9R2;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8436A3G9R2;
 						LastSwiftMigration = 0820;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -496,6 +498,7 @@
 			baseConfigurationReference = 8DB8156ECE555DA32247A12F /* Pods-TaniwhaTextField_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = TaniwhaTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +513,7 @@
 			baseConfigurationReference = CAE293A1333244BEC3018EFE /* Pods-TaniwhaTextField_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				INFOPLIST_FILE = TaniwhaTextField/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -523,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEA143DB5945F45A476DDAAC /* Pods-TaniwhaTextField_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -543,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BCD0601F7C12FB0B6B8A075E /* Pods-TaniwhaTextField_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8436A3G9R2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
