@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TaniwhaTextField
 //
-//  Created by iceman201 on 06/23/2017.
-//  Copyright (c) 2017 iceman201. All rights reserved.
+//  Created by Liguo Jiao on 06/23/2017.
+//  Copyright (c) 2017 Liguo Jiao. All rights reserved.
 //
 
 import UIKit
