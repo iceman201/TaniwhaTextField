@@ -35,6 +35,7 @@ import UIKit
     var placeholderLabelView = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var bottomlineView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var isMoveUp = false
+    var isChanged  = false
     
     @IBInspectable var bottomLineWidth : CGFloat = 2.0
     @IBInspectable var bottomLineColor : UIColor = .black
@@ -55,6 +56,7 @@ import UIKit
         guard let font = self.font else {
             return
         }
+        
         placeholderLabelView = UILabel(frame: CGRect(x: rect.origin.x, y: bottomLineWidth, width: rect.size.width, height: font.pointSize))
         placeholderLabelView.center = CGPoint(x: placeholderLabelView.center.x, y: frame.size.height - bottomlineView.frame.size.height - placeholderLabelView.frame.size.height / 2)
         placeholderLabelView.text = self.placeholder
@@ -122,7 +124,11 @@ import UIKit
     // MARK: - Delegate
     @objc private func didBeginTextEdit() {
         if !self.isMoveUp {
+            if self.isChanged {
+                return
+            }
             UIView.animate(withDuration: animateDuration, animations: {
+                self.isChanged = true
                 self.placeholderLabelView.transform = CGAffineTransform(scaleX: self.scaleIndex, y: self.scaleIndex)
                 self.placeholderLabelView.alpha = self.placeholderAlphaAfter
                 self.placeholderLabelView.center = CGPoint(x: self.placeholderLabelView.center.x * self.scaleIndex, y: 0 + self.placeholderLabelView.frame.size.height)
@@ -130,6 +136,7 @@ import UIKit
             }, completion: { (done) in
                 if done {
                     self.isMoveUp = true
+                    self.isChanged = false
                 }
             })
         } else {
@@ -142,20 +149,29 @@ import UIKit
     @objc private func didTextEditFinish() {
         if self.isMoveUp {
             if self.text?.characters.count == 0 {
+                if self.isChanged {
+                    return
+                }
                 UIView.animate(withDuration: animateDuration, animations: {
+                    self.isChanged = true
                     self.placeholderLabelView.alpha = self.placeholderAlphaBefore
                     self.placeholderLabelView.center = CGPoint(x: self.placeholderLabelView.center.x / self.scaleIndex, y: self.frame.size.height - self.bottomlineView.frame.size.height - self.placeholderLabelView.frame.size.height / 2.0 - 2.0)
                     self.placeholderLabelView.transform = CGAffineTransform.identity
                     self.bottomlineView.alpha = self.bottomLineAlphaBefore
                 }, completion: { (done) in
                     if done {
+                        self.isChanged = false
                         self.isMoveUp = false
                     }
                 })
             }
         } else {
-            if (self.text?.characters.count)! > 0 {
+            if (self.text?.characters.count)! > 0  {
+                if self.isChanged {
+                    return
+                }
                 UIView.animate(withDuration: animateDuration, animations: {
+                    self.isChanged = true
                     self.placeholderLabelView.transform = CGAffineTransform(scaleX: self.scaleIndex, y: self.scaleIndex)
                     self.placeholderLabelView.alpha = self.placeholderAlphaAfter
                     self.placeholderLabelView.center = CGPoint(x: self.placeholderLabelView.center.x * self.scaleIndex, y: 0 + self.placeholderLabelView.frame.size.height)
@@ -163,6 +179,7 @@ import UIKit
                 }, completion: { (done) in
                     if done {
                         self.isMoveUp = true
+                        self.isChanged = false
                     }
                 })
             } else {
@@ -178,3 +195,4 @@ import UIKit
         NotificationCenter.default.removeObserver(self)
     }
 }
+
