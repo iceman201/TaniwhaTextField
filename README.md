@@ -4,9 +4,9 @@
 <img src="https://github.com/iceman201/TaniwhaTextField/blob/master/Example/taniwhaTextfield.png?raw=true" alt="ABMediaView custom logo"/>
 </p>
 
-[![CI Status](http://img.shields.io/travis/iceman201/TaniwhaTextField.svg?style=flat)](https://travis-ci.org/iceman201/TaniwhaTextField)
+
 [![Version](https://img.shields.io/cocoapods/v/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
-[![License](https://img.shields.io/cocoapods/l/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
+![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)&nbsp;
 [![Platform](https://img.shields.io/cocoapods/p/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 
 ## Example
