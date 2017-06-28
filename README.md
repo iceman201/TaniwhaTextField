@@ -6,7 +6,7 @@
 
 
 [![Version](https://img.shields.io/cocoapods/v/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
-![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)&nbsp;
+[![License](https://img.shields.io/cocoapods/l/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 [![Platform](https://img.shields.io/cocoapods/p/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 
 ## Example
