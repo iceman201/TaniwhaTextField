@@ -5,6 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 [![Platform](https://img.shields.io/cocoapods/p/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 
+<p align="center">
+<img src="" alt="ABMediaView custom logo"/>
+</p>
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05B536451F03742100C32A71 /* taniwhaTextfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 05B536441F03742100C32A71 /* taniwhaTextfield.png */; };
 		32A7747AD1351046B765AE65 /* Pods_TaniwhaTextField_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44715838AB934DBA11DA167E /* Pods_TaniwhaTextField_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B536441F03742100C32A71 /* taniwhaTextfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = taniwhaTextfield.png; sourceTree = "<group>"; };
 		44715838AB934DBA11DA167E /* Pods_TaniwhaTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaniwhaTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* TaniwhaTextField_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaniwhaTextField_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				C374B47A61F81F57142C5A31 /* TaniwhaTextField.podspec */,
 				83F04F8A795CB89D86F68E14 /* README.md */,
+				05B536441F03742100C32A71 /* taniwhaTextfield.png */,
 				AE888A488FB89BEC4C8CE7D3 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -250,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05B536451F03742100C32A71 /* taniwhaTextfield.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
