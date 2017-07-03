@@ -9,6 +9,9 @@
 [![License](https://img.shields.io/cocoapods/l/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 [![Platform](https://img.shields.io/cocoapods/p/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 
+## Introduction
+TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
