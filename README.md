@@ -1,7 +1,7 @@
 # TaniwhaTextField
 
 <p align="center">
-<img src="https://github.com/iceman201/TaniwhaTextField/blob/master/Example/taniwhaTextfield.png?raw=true" alt="ABMediaView custom logo"/>
+<img src="https://github.com/iceman201/TaniwhaTextField/blob/master/Example/taniwhaTextfield.png?raw=true" alt="logo"/>
 </p>
 
 
