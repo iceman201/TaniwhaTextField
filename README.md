@@ -14,7 +14,7 @@
 TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.
 
 ## Usage
-###
+### Programme 
 ```
 import TaniwhaTextField
 
@@ -32,6 +32,8 @@ class ViewController: UIViewController {
 }
 
 ```
+### Storyboard
+![image](https://user-images.githubusercontent.com/5027957/28316984-274beb06-6c19-11e7-9357-1a8f0793c2aa.png)
 
 
 
