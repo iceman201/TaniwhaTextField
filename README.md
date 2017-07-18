@@ -11,8 +11,7 @@
 [![Issues](https://img.shields.io/github/issues/iceman201/TaniwhaTextField.svg?style=flat)](https://github.com/iceman201/TaniwhaTextField/issues?state=open) 
 
 ## Introduction
-TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.
-
+TaniwhaTextField is a lightweight and beautiful swift textfield framework. It has float label pattern, and also you can highly customise it.
 ## Usage
 #### Programme
 ```
