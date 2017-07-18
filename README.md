@@ -13,6 +13,28 @@
 ## Introduction
 TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.
 
+## Usage
+###
+```
+import TaniwhaTextField
+
+class ViewController: UIViewController {
+
+    @IBOutlet var taniwha: TaniwhaTextField!
+    
+    @IBOutlet var marimari: TaniwhaTextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        taniwha.placeholder = "Tena Koe"
+        marimari.placeholder = "Kia Ora"
+    }
+}
+
+```
+
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
