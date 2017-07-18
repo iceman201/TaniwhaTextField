@@ -14,7 +14,7 @@
 TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.
 
 ## Usage
-### Programme 
+#### Programme
 ```
 import TaniwhaTextField
 
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
 }
 
 ```
-### Storyboard
+#### Storyboard
 ![image](https://user-images.githubusercontent.com/5027957/28316984-274beb06-6c19-11e7-9357-1a8f0793c2aa.png)
 
 
@@ -62,4 +62,4 @@ iceman201, liguo@jiao.co.nz
 
 ## License
 
-TaniwhaTextField is available under the MIT license. See the LICENSE file for more info.
+TaniwhaTextField is available under the MIT license. See the [LICENSE](https://github.com/iceman201/TaniwhaTextField/blob/master/LICENSE) file for more info.
