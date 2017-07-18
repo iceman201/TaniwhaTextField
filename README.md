@@ -17,7 +17,11 @@ TaniwhaTextField is a lightweight and beautiful swift textfield framework. And a
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## SPEC
+
+Swift 3.0
+support up iOS 8 above
+
 
 ## Installation
 
