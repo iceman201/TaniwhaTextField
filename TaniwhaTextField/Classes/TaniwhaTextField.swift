@@ -31,69 +31,69 @@ import UIKit
     let textInsetSpace : CGFloat = 1.5
     let placeholderAlphaAfter : CGFloat = 0.85
     let placeholderAlphaBefore : CGFloat = 0.5
-    
+
     var placeholderLabelView = UILabel(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var bottomlineView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
     var isMoveUp = false
     var isChanged  = false
-    
+
     @IBInspectable var bottomLineWidth : CGFloat = 2.0
     @IBInspectable var bottomLineColor : UIColor = .black
     @IBInspectable var bottomLineAlphaBefore : CGFloat = 0.5
     @IBInspectable var bottomLineAlphaAfter : CGFloat = 1
     @IBInspectable var placeholderTextColor : UIColor = .gray
     @IBInspectable var animateDuration : TimeInterval = 0.35
-    
+
     override open func draw(_ rect: CGRect) {
         super.draw(rect)
         self.drawLine()
-        NotificationCenter.default.addObserver(self, selector: #selector(didBeginTextEdit), name: NSNotification.Name.UITextFieldTextDidBeginEditing, object: self)
-        NotificationCenter.default.addObserver(self, selector: #selector(didTextEditFinish), name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(didBeginTextEdit), name: UITextField.textDidBeginEditingNotification, object: self)
+        NotificationCenter.default.addObserver(self, selector: #selector(didTextEditFinish), name: UITextField.textDidChangeNotification, object: self)
     }
-    
+
     override open func drawPlaceholder(in rect: CGRect) {
         super.drawPlaceholder(in: rect)
         guard let font = self.font else {
             return
         }
-        
+
         placeholderLabelView = UILabel(frame: CGRect(x: rect.origin.x, y: bottomLineWidth, width: rect.size.width, height: font.pointSize))
         placeholderLabelView.center = CGPoint(x: placeholderLabelView.center.x, y: frame.size.height - bottomlineView.frame.size.height - placeholderLabelView.frame.size.height / 2)
         placeholderLabelView.text = self.placeholder
         self.placeholder = nil
-        
+
         placeholderLabelView.font = UIFont(name: font.fontName, size: font.pointSize)
         placeholderLabelView.textColor = placeholderTextColor
         placeholderLabelView.alpha = placeholderAlphaBefore
-        
+
         self.addSubview(placeholderLabelView)
-        self.bringSubview(toFront: placeholderLabelView)
+        self.bringSubviewToFront(placeholderLabelView)
     }
-    
+
     override open func drawText(in rect: CGRect) {
         super.drawText(in: rect)
-        
+
         if self.placeholder != nil {
             drawPlaceholderAfterTransshaped(rect: rect)
         }
         self.textAlignment = .left
         self.contentVerticalAlignment = .bottom
     }
-    
+
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
         let insetSpaceY = self.bottomLineWidth + 2.0
         self.textAlignment = .left
         self.contentVerticalAlignment = .bottom
         return bounds.insetBy(dx: self.textInsetSpace, dy: insetSpaceY)
     }
-    
+
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         let insetSpaceY = self.bottomLineWidth + 2.0
         self.textAlignment = .left
         self.contentVerticalAlignment = .bottom
         return bounds.insetBy(dx: self.textInsetSpace, dy: insetSpaceY)
     }
-    
+
     fileprivate func drawLine() {
         let bottomLine = UIView(frame:CGRect(x: 0, y: frame.size.height - bottomLineWidth, width: frame.size.width, height: bottomLineWidth))
         bottomLine.backgroundColor = bottomLineColor
@@ -101,7 +101,7 @@ import UIKit
         bottomlineView = bottomLine
         self.addSubview(bottomlineView)
     }
-    
+
     fileprivate func drawPlaceholderAfterTransshaped(rect: CGRect) {
         guard let font = self.font else {
             return
@@ -111,16 +111,16 @@ import UIKit
         placeholderLabelView.center = CGPoint(x: placeholderLabelView.center.x * scaleIndex, y: 0 + placeholderLabelView.frame.size.height)
         placeholderLabelView.text = self.placeholder
         self.placeholder = nil
-        
+
         placeholderLabelView.font = UIFont(name: font.fontName, size: font.pointSize)
         placeholderLabelView.textColor = placeholderTextColor
         placeholderLabelView.alpha = placeholderAlphaAfter
         isMoveUp = true
-        
+
         self.addSubview(placeholderLabelView)
-        self.bringSubview(toFront: placeholderLabelView)
+        self.bringSubviewToFront(placeholderLabelView)
     }
-    
+
     // MARK: - Delegate
     @objc private func didBeginTextEdit() {
         if !self.isMoveUp {
@@ -145,10 +145,10 @@ import UIKit
             })
         }
     }
-    
+
     @objc private func didTextEditFinish() {
         if self.isMoveUp {
-            if self.text?.characters.count == 0 {
+            if self.text?.count == 0 {
                 if self.isChanged {
                     return
                 }
@@ -166,7 +166,7 @@ import UIKit
                 })
             }
         } else {
-            if (self.text?.characters.count)! > 0  {
+            if (self.text?.count)! > 0  {
                 if self.isChanged {
                     return
                 }
@@ -189,10 +189,9 @@ import UIKit
             }
         }
     }
-    
+
     // MARK: - Dealloc
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
 }
-
