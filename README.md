@@ -5,7 +5,7 @@
 </p>
 
 [![Version](https://img.shields.io/cocoapods/v/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
-[![Swift 4.2](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/) 
+[![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/) 
 [![License](https://img.shields.io/cocoapods/l/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 [![Platform](https://img.shields.io/cocoapods/p/TaniwhaTextField.svg?style=flat)](http://cocoapods.org/pods/TaniwhaTextField)
 [![Issues](https://img.shields.io/github/issues/iceman201/TaniwhaTextField.svg?style=flat)](https://github.com/iceman201/TaniwhaTextField/issues?state=open) 
