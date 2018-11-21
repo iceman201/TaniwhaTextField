@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TaniwhaTextField'
-  s.version          = '1.0'
+  s.version          = '1.5'
   s.summary          = 'TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.'
-
+  
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
