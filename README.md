@@ -42,7 +42,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## SPEC
 
-Swift 3.0
+Swift 4.2
 support up iOS 8 above
 
 
