@@ -8,15 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TaniwhaTextField'
-  s.version          = '1.5'
+  s.version          = '1.5.1'
   s.summary          = 'TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.'
-  
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = 'TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it. Long-term support for sure.'
 
   s.homepage         = 'https://github.com/iceman201/TaniwhaTextField'
@@ -24,17 +17,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liguo jiao' => 'liguo@jiao.co.nz' }
   s.source           = { :git => 'https://github.com/iceman201/TaniwhaTextField.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/jiaoliguo'
+  s.social_media_url = 'https://liguo.jiao.co.nz'
 
-  s.ios.deployment_target = '8.0'
-  s.swift_version = '4.2'
+  s.ios.deployment_target = '11.0'
+  s.swift_version = '5.0'
   s.source_files = 'TaniwhaTextField/Classes/TaniwhaTextField.swift'
-  
-  # s.resource_bundles = {
-  #   'TaniwhaTextField' => ['TaniwhaTextField/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
