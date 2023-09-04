@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TaniwhaTextField'
-  s.version          = '1.5.1'
+  s.version          = '1.5.2'
   s.summary          = 'TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it.'
   s.description      = 'TaniwhaTextField is a lightweight and beautiful swift textfield framework. And also you can highly customize it. Long-term support for sure.'
 
