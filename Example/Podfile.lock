@@ -1,5 +1,5 @@
 PODS:
-  - TaniwhaTextField (0.1.0)
+  - TaniwhaTextField (1.5)
 
 DEPENDENCIES:
   - TaniwhaTextField (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TaniwhaTextField: 9076a1bed277dcce390a6077e27b462da6710edf
+  TaniwhaTextField: 14f2c36382f2c5be338a942e67756dae8ecf2878
 
 PODFILE CHECKSUM: 231415870fa4b9fd1e632af3ec64d78fbaf9fa3e
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.12.1
